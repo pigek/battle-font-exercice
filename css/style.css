@@ -1,0 +1,117 @@
+.facade{
+  font-family: 'FacadeGX';/*on réutilise le nom choisi au sein du fichier font_liste.css*/
+  font-variation-settings: "wght"300,"csct"800;
+}
+
+
+.fungal{
+  font-family: 'FungalGX';
+  font-variation-settings:"grow"1000,"THCK"100;
+}
+
+h2{
+  font-size:600px;
+  color:blue;
+  transform:rotate(0deg);
+ 
+}
+
+#premiere{
+  position:relative;
+  color:rgb(255, 0, 0);
+  transform:rotate(0deg);
+  z-index:1;
+  mix-blend-mode:multiply;
+   /*Paramètre de l'animation :*/
+   animation-name:fungal; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+   animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+   animation-iteration-count: 20; /*nombre d'itération de l'animation*/
+   animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+   animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+   animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+   /*--------------------------------------------------------------------------------------------*/
+   
+   /*vous pouvez éventuellement utiliser :*/
+   animation-play-state: paused; /*mettre en pause une animation*/
+   animation-play-state: running; /*jouer une animation*/
+}
+
+@keyframes fungal { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+font: size 10px; ;
+color:rgb(255, 0, 191);
+font-variation-settings: "wght"100,"grow"1000,"THCK"100;
+
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+color:rgb(255, 0, 191); 
+font-variation-settings: "wght"900;
+font-size: 800px;
+}
+}
+
+
+#deuxieme{
+  font-size: 600px;
+  position:relative;
+  top:-400px;
+  color:blue;
+  opacity:0.5;
+  transform:rotate(deg);
+  mix-blend-mode:multiply;
+    /*Paramètre de l'animation :*/
+    animation-name:facade; /*renseigner ici le nome de l'animation c'est écrit à côté de keyframes*/
+    animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+    animation-iteration-count: 20; /*nombre d'itération de l'animation*/
+    animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+    animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+    animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+    /*--------------------------------------------------------------------------------------------*/
+    
+    /*vous pouvez éventuellement utiliser :*/
+    animation-play-state: paused; /*mettre en pause une animation*/
+    animation-play-state: running; /*jouer une animation*/
+}
+
+@keyframes facade { /*ici vous renseignez le nom de l'animation à réutiliser 
+  pour la propriété animation-name*/
+  
+0%{ /*ici on renseigne la valeur de départ*/
+font: size 10px; ;
+color:aquamarine;
+font-variation-settings: "wght"100;
+
+}
+
+100%{/*ici on renseigne la valeur de fin*/
+color:blue; 
+font-variation-settings: "wght"900;
+font-size: 800px;
+}
+}
+#troisieme{
+  font-size: 200px;
+  position: absolute;
+  top:0px;
+  color:aqua;
+  mix-blend-mode:multiply;
+  z-index: 12;
+  transition-duration: 2s;
+  font-variation-settings:"wght"100;
+}
+#troisieme:hover{
+  color:rgb(98, 87, 255);
+  font-variation-settings:"wght"900;
+}
+ 
+
+  
+
+ 
+  
+  
+  
+  
